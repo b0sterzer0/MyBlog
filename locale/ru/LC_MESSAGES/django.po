@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-21 14:33+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\app_blog\models.py:8
+msgid "title"
+msgstr "заголовок"
+
+#: .\app_blog\models.py:9 .\app_blog\models.py:22
+msgid "author"
+msgstr "автор"
+
+#: .\app_blog\models.py:10 .\app_blog\models.py:23
+msgid "text"
+msgstr "текст"
+
+#: .\app_blog\models.py:11
+msgid "add date"
+msgstr "дата добавления"
+
+#: .\app_blog\models.py:17 .\app_blog\models.py:25
+msgid "post"
+msgstr "пост"
+
+#: .\app_blog\models.py:18
+msgid "posts"
+msgstr "посты"
+
+#: .\app_blog\models.py:24
+msgid "add comment date"
+msgstr "дата добавления комментария"
+
+#: .\app_blog\models.py:31
+msgid "comment"
+msgstr "комментарий"
+
+#: .\app_blog\models.py:32
+msgid "comments"
+msgstr "комментарии"
+
+#: .\app_blog\templates\base.html:7
+msgid "My blog"
+msgstr "Мой блог"
+
+#: .\app_blog\templates\base.html:11 .\app_blog\templates\base.html:13
+msgid "Posts list"
+msgstr "Список постов"
+
+#: .\app_blog\templates\base.html:11 .\app_user\templates\auth\login.html:7
+#: .\app_user\templates\auth\login.html:10
+#: .\app_user\templates\auth\login.html:14
+msgid "Login"
+msgstr "Войти"
+
+#: .\app_blog\templates\base.html:13
+msgid "Good day"
+msgstr "Добрый день"
+
+#: .\app_blog\templates\base.html:14 .\app_user\templates\user\profile.html:5
+msgid "Profile"
+msgstr "Профиль"
+
+#: .\app_blog\templates\base.html:14
+msgid "Logout"
+msgstr "Выйти"
+
+#: .\app_blog\templates\blog\create_post.html:9
+msgid "Add post"
+msgstr "Добавить пост"
+
+#: .\app_blog\templates\blog\detail_view.html:5
+#: .\app_blog\templates\blog\list_post.html:8
+msgid "Title"
+msgstr "Заголовок"
+
+#: .\app_blog\templates\blog\detail_view.html:6
+msgid "Author"
+msgstr "Автор"
+
+#: .\app_blog\templates\blog\detail_view.html:7
+msgid "Text"
+msgstr "Текст"
+
+#: .\app_blog\templates\blog\detail_view.html:8
+msgid "Add date"
+msgstr "Дата добавления"
+
+#: .\app_blog\templates\blog\detail_view.html:10
+msgid "Edit"
+msgstr "Редактировать"
+
+#: .\app_blog\templates\blog\detail_view.html:10
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\app_blog\templates\blog\detail_view.html:23
+#: .\app_blog\templates\blog\edit_post.html:9
+#: .\app_blog\templates\blog\list_post.html:18
+#: .\app_user\templates\user\profile.html:10
+#: .\app_user\templates\user\registration.html:14
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\app_blog\templates\blog\edit_post.html:5
+msgid "Edit post"
+msgstr "Редактировать пост"
+
+#: .\app_blog\templates\blog\list_post.html:6
+msgid "Posts"
+msgstr "Посты"
+
+#: .\app_blog\templates\blog\list_post.html:8
+#: .\app_user\templates\user\profile.html:16
+msgid "More"
+msgstr "Подробнее"
+
+#: .\app_blog\templates\blog\list_post.html:11
+#: .\app_user\templates\user\profile.html:19
+msgid "Not posts yet"
+msgstr "Постов еще нет"
+
+#: .\app_user\forms.py:8
+msgid "first name"
+msgstr "имя"
+
+#: .\app_user\forms.py:9
+msgid "last name"
+msgstr "фамилия"
+
+#: .\app_user\forms.py:10 .\app_user\forms.py:22
+msgid "email"
+msgstr "электронная почта"
+
+#: .\app_user\forms.py:11 .\app_user\forms.py:23 .\app_user\models.py:8
+msgid "city"
+msgstr "город"
+
+#: .\app_user\forms.py:12 .\app_user\forms.py:24 .\app_user\models.py:9
+msgid "date of birth"
+msgstr "дата рождения"
+
+#: .\app_user\forms.py:13 .\app_user\models.py:10
+msgid "hobby"
+msgstr "хобби"
+
+#: .\app_user\forms.py:17
+msgid "username"
+msgstr "имя пользователя"
+
+#: .\app_user\forms.py:18
+msgid "password"
+msgstr "пароль"
+
+#: .\app_user\models.py:7
+msgid "user"
+msgstr "пользователь"
+
+#: .\app_user\models.py:16
+msgid "profile model"
+msgstr "модель пользователя"
+
+#: .\app_user\models.py:17
+msgid "profile models"
+msgstr "модели пользователя"
+
+#: .\app_user\templates\user\profile.html:13
+msgid "Your posts"
+msgstr "Ваши посты"
+
+#: .\app_user\templates\user\registration.html:7
+#: .\app_user\templates\user\registration.html:10
+msgid "Registration"
+msgstr "Регистрация"

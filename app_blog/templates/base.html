@@ -1,0 +1,38 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans 'My blog' %}</title>
+</head>
+<body>
+{% if not request.user.is_authenticated %}
+    <p><a href="/blog/wall/">{% trans 'Posts list' %}</a></p><p align="right"><a href="/user/login/">{% trans 'Login' %}</a></p>
+{% else %}
+    <p align="left"><a href="/blog/wall/">{% trans 'Posts list' %}</a></p><p align="right">{% trans 'Good day' %}, {{ request.user.username }}</p>
+    <p><a href="/user/profile/">{% trans 'Profile' %}</a></p><p align="right"><a href="/user/logout/">{% trans 'Logout' %}</a></p>
+{% endif %}
+
+<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <select name="language">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }} ({{ language.code }})
+            </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Go">
+</form>
+
+
+<br>
+<br>
+{% block content %}
+{% endblock %}
+</body>
+</html>

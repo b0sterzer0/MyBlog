@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+    {% if posts %}
+      <h2>{% trans 'Posts' %}:</h2><br>
+      {% for post in posts %}
+        <h3>{% trans 'Title' %}: {{ post.title }}    <a href="/blog/post/{{ post.id }}">{% trans 'More' %}</a> </h3><br>
+      {% endfor %}
+    {% else %}
+      <h2>{% trans 'Not posts yet' %}</h2>
+    {% endif %}
+
+    {% if request.user.is_authenticated %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{% trans 'Save' %}</button>
+        </form>
+    {% endif %}
+{% endblock %}
